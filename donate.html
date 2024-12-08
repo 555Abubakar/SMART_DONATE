@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donate - SmartDonate</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>SmartDonate</h1>
+        </div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="dashboard.html">Dashboard</a>
+            <a href="login.html">Login</a>
+        </nav>
+    </header>
+
+    <section class="donate-form">
+        <h2>Donate Now</h2>
+        <form id="donate-form">
+            <label for="item">Item:</label>
+            <input type="text" id="item" name="item" required>
+
+            <label for="category">Category:</label>
+            <select id="category" name="category" required>
+                <option value="food">Food</option>
+                <option value="clothes">Clothes</option>
+                <option value="books">Books</option>
+                <option value="money">Money</option>
+            </select>
+
+            <label for="description">Description:</label>
+            <textarea id="description" name="description" required></textarea>
+
+            <label for="quantity">Quantity:</label>
+            <input type="number" id="quantity" name="quantity" required>
+
+            <button type="submit" class="btn">Submit Donation</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 SmartDonate. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
